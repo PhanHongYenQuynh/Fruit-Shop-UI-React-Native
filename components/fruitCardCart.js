@@ -1,23 +1,28 @@
-import { View, Text, TouchableOpacity, Image } from 'react-native'
+import { View, Text, TouchableOpacity, Image } from "react-native";
 import React, { useState } from "react";
-import { themeColors } from '../theme'
-import { MinusIcon, PlusIcon } from 'react-native-heroicons/solid'
+import { themeColors } from "../theme";
+import { MinusIcon, PlusIcon } from "react-native-heroicons/solid";
 
-export default function FruitCardCart({fruit}) {
-    const [quantity, setQuantity] = useState(fruit.qty);
-    const increaseQty = () => {
-      setQuantity((prevQty) => prevQty + 1);
-    };
+export default function FruitCardCart({ fruit }) {
+  const [quantity, setQuantity] = useState(fruit.qty);
+  const increaseQty = () => {
+    setQuantity((prevQty) => prevQty + 1);
+  };
 
-    const decreaseQty = () => {
-      if (quantity > 1) {
-        setQuantity((prevQty) => prevQty - 1);
-      }
-    };
+  const decreaseQty = () => {
+    if (quantity > 1) {
+      setQuantity((prevQty) => prevQty - 1);
+    }
+  };
   return (
     <View className="flex-row justify-between items-center space-x-5 mb-4">
       <View className="ml-5">
-        <TouchableOpacity className="flex-row justify-center -mb-10 -ml-10 shadow-lg z-20">
+        <TouchableOpacity
+          onPress={() =>
+            navigation.navigate("Product", { ...fruit, color: fruit.color(1) })
+          }
+          className="flex-row justify-center -mb-9 shadow-lg z-20"
+        >
           <Image
             source={fruit.image}
             style={{

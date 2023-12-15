@@ -30,7 +30,7 @@ export const featuredFruits = [
   },
 
   {
-    name: "Nho đỏ",
+    name: "Lựu đạn",
     price: "30.000",
     stars: 4,
     desc: "Ngọt và mọng nước",
