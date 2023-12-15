@@ -19,7 +19,7 @@ export default function CartScreen(props) {
                 </TouchableOpacity>
             </View>
             <View className="cart mx-5 flex-1">
-                <Text style={{color: themeColors.text}} className="text-2xl py-10">Your <Text className="font-bold">cart</Text></Text>
+                <Text style={{color: themeColors.text}} className="text-2xl py-10">Cart's <Text className="font-bold">Phan Hong Yen Quynh</Text></Text>
                 <View>
                     {
                        cartItems.map((item,index)=>  <FruitCardCart fruit={item} key={index} />)
