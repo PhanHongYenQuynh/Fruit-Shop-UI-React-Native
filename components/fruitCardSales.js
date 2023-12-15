@@ -20,7 +20,7 @@ export default function FruitCardSales({fruit}) {
         className={` rounded-3xl flex justify-end items-center`}>
         
         <Text 
-        className="font-semibold text-center text-gray-800 tracking-wide pb-3">$ {fruit.price}</Text>
+        className="font-semibold text-center text-gray-800 tracking-wide pb-3">{fruit.price}đ</Text>
         </View>
     </View>
   )

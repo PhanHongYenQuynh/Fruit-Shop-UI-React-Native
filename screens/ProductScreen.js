@@ -33,7 +33,7 @@ export default function ProductScreen(props) {
            <View className="flex-row justify-between mb-3">
             <Text className="text-gray-500 font-semibold">{fruit.desc}</Text>
             <Text className="text-gray-500 font-semibold">
-                Sold <Text className="text-gray-800 font-extrabold"> 239</Text>
+                Bán <Text className="text-gray-800 font-extrabold"> 239</Text>
             </Text>
            </View>
 
@@ -54,7 +54,7 @@ export default function ProductScreen(props) {
             </View>
             
             <View className="flex-row justify-between items-center">
-                <Text className="text-3xl">$ {fruit.price}</Text>
+                <Text className="text-3xl">{fruit.price}đ</Text>
                 <TouchableOpacity onPress={()=> navigation.navigate('Cart')} 
                 style={{
                     backgroundColor: fruit.shadow, 
@@ -64,7 +64,7 @@ export default function ProductScreen(props) {
                     shadowOffset: {width: 0, height: 15},
                     shadowOpacity: 0.5,
                 }} className="p-3 ml-6 flex-1 rounded-xl">
-                    <Text className="text-xl text-center text-white font-bold">Add To Cart</Text>
+                    <Text className="text-xl text-center text-white font-bold">Thêm vào giỏi hàng</Text>
                 </TouchableOpacity>
             </View>
         </View>

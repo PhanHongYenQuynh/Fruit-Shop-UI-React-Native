@@ -40,13 +40,13 @@ export default function HomeScreen() {
           style={{ color: themeColors.text }}
           className="text-2xl tracking-widest font-medium ml-5"
         >
-          Seasonal
+          Theo Mùa
         </Text>
         <Text
           style={{ color: themeColors.text }}
           className="text-3xl font-semibold ml-5"
         >
-          Fruits and Vegetables
+          Trái Cây Nhập Khẩu
         </Text>
         <ScrollView
           className="mt-8 px-5"
@@ -88,7 +88,7 @@ export default function HomeScreen() {
       {/* hot sales */}
       <View className="mt-8 pl-5 space-y-1">
         <Text style={{ color: themeColors.text }} className="text-xl font-bold">
-          Hot Sales
+          🔥 Bán chạy 🔥
         </Text>
         <ScrollView
           horizontal

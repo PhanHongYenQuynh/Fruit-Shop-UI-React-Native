@@ -27,7 +27,7 @@ export default function FruitCard({fruit}) {
     
         <View className="ml-4 my-4">
             <Text className="font-bold text-xl text-white shadow">{fruit.name}</Text>
-            <Text className="font-bold text-lg text-white shadow tracking-wide  ">$ {fruit.price}</Text>
+            <Text className="font-bold text-lg text-white shadow tracking-wide  ">{fruit.price}đ</Text>
         </View>
     </View>
   )
